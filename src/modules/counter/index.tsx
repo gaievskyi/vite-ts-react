@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button, Wrapper } from 'components'
 
 type CounterProps = {
@@ -15,6 +15,10 @@ export const Counter: React.FC<CounterProps> = ({ initialCount = 0 }) => {
   const reset = () => {
     set(initialCount)
   }
+
+  useEffect(() => {
+    document.title = `Counter: ${count}`
+  }, [count])
 
   return (
     <Wrapper>
