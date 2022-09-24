@@ -1,8 +1,3 @@
-import { Counter, Wrapper } from 'components'
+import { WelcomePage } from 'pages'
 
-export const App: React.FC = () => (
-  <Wrapper>
-    <h1>Hello, world!</h1>
-    <Counter />
-  </Wrapper>
-)
+export const App: React.FC = () => <WelcomePage />

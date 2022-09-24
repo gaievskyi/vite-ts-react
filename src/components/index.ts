@@ -1,3 +1,5 @@
+// structure
 export * from './wrapper'
-export * from './counter'
+
+// elements
 export * from './button'
