@@ -1,0 +1,11 @@
+version: "0.0.1"
+
+services:
+  client:
+    build:
+      target: development
+    command: pnpm run dev --port ${PORT}
+    ports:
+      - 3000:3000
+    volumes:
+      - "./src:/app/src"
